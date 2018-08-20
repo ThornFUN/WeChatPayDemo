@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="输入金额："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/edittext_secltor"
+            android:hint="请输入要付金额"
+            android:inputType="number"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:text="趣网吧补贴5元"/>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:text="确定"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:visibility="gone"
+        android:text="立即支付"
+        android:textSize="20sp" />
+    
+
+</LinearLayout>
